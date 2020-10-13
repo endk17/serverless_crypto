@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cryptoserverless-dev-153130-authRole",
+      "UnauthRoleArn": "arn:aws:iam::546508535160:role/amplify-cryptoserverless-dev-153130-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::546508535160:role/amplify-cryptoserverless-dev-153130-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-cryptoserverless-dev-153130-deployment",
+      "UnauthRoleName": "amplify-cryptoserverless-dev-153130-unauthRole",
+      "StackName": "amplify-cryptoserverless-dev-153130",
+      "StackId": "arn:aws:cloudformation:eu-west-1:546508535160:stack/amplify-cryptoserverless-dev-153130/c9861040-0d60-11eb-9989-061bd153cf1e",
+      "AmplifyAppId": "d17q3ftjnw3a77"
+    }
+  }
+}

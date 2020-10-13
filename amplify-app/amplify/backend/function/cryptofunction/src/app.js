@@ -49,7 +49,7 @@ app.get('/coins', function(req, res) {
   res.json({
     coins
   })
-});
+})
 
 /****************************
 * Example post method *

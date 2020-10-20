@@ -68,8 +68,8 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-cryptoserverless-dev-153130-deployment",
-          "S3Key": "amplify-builds/cryptofunction-697642306365652b3843-build.zip"
+          "S3Bucket": "amplify-amplifyapp-dev-83538-deployment",
+          "S3Key": "amplify-builds/cryptofunction-5431722f546c7262304e-build.zip"
         }
       }
     },
@@ -79,12 +79,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "cryptoserverlessLambdaRolef47276cf",
+            "amplifyappLambdaRole0b9171a0",
             {
               "Fn::Join": [
                 "",
                 [
-                  "cryptoserverlessLambdaRolef47276cf",
+                  "amplifyappLambdaRole0b9171a0",
                   "-",
                   {
                     "Ref": "env"

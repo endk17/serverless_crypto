@@ -30,6 +30,17 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
+app.get('/coins', function(req, res) {
+  const coins = [
+    { name: 'Bitcoin', symbol: 'BTC', price_usd: '10000' },
+    { name: 'Etherrum', symbol: 'ETH', price_usd: '1500' },
+    { name: 'Litecoin', symbol: 'LTC', price_usd: '150' }
+  ]
+  res.json({
+    coins
+  })
+});
+
 app.get('/item', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
@@ -39,17 +50,6 @@ app.get('/item/*', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
-
-app.get('/coins', function(req, res) {
-  const coins = [
-    { name: 'Bitcoin', symbol: 'BTC', price_usd: "10000" },
-    { name: 'Ethereum', symbol: 'ETH', price_usd: "450" },
-    { name: 'Litecoin', symbol: 'LTC', price_usd: "150" }
-  ]
-  res.json({
-    coins
-  })
-})
 
 /****************************
 * Example post method *

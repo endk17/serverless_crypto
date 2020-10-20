@@ -9,8 +9,8 @@
             "policyResourceName": "/coins"
         }
     ],
-    "resourceName": "cryptoAPI",
-    "apiName": "cryptoAPI",
+    "resourceName": "cryptoapi",
+    "apiName": "cryptoapi",
     "functionArns": [
         {
             "lambdaFunction": "cryptofunction"
@@ -19,8 +19,8 @@
     "privacy": {
         "auth": 0,
         "unauth": 0,
-        "authRoleName": "amplify-cryptoserverless-dev-153130-authRole",
-        "unAuthRoleName": "amplify-cryptoserverless-dev-153130-unauthRole"
+        "authRoleName": "amplify-amplifyapp-dev-83538-authRole",
+        "unAuthRoleName": "amplify-amplifyapp-dev-83538-unauthRole"
     },
     "dependsOn": [
         {

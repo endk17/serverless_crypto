@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cryptoserverless-dev-153130-authRole",
-      "UnauthRoleArn": "arn:aws:iam::546508535160:role/amplify-cryptoserverless-dev-153130-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::546508535160:role/amplify-cryptoserverless-dev-153130-authRole",
+      "AuthRoleName": "amplify-amplifyapp-dev-83538-authRole",
+      "UnauthRoleArn": "arn:aws:iam::546508535160:role/amplify-amplifyapp-dev-83538-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::546508535160:role/amplify-amplifyapp-dev-83538-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-cryptoserverless-dev-153130-deployment",
-      "UnauthRoleName": "amplify-cryptoserverless-dev-153130-unauthRole",
-      "StackName": "amplify-cryptoserverless-dev-153130",
-      "StackId": "arn:aws:cloudformation:eu-west-1:546508535160:stack/amplify-cryptoserverless-dev-153130/c9861040-0d60-11eb-9989-061bd153cf1e",
-      "AmplifyAppId": "d17q3ftjnw3a77"
+      "DeploymentBucketName": "amplify-amplifyapp-dev-83538-deployment",
+      "UnauthRoleName": "amplify-amplifyapp-dev-83538-unauthRole",
+      "StackName": "amplify-amplifyapp-dev-83538",
+      "StackId": "arn:aws:cloudformation:eu-west-1:546508535160:stack/amplify-amplifyapp-dev-83538/da4fdc30-12a6-11eb-ade4-0a80a9d638ae",
+      "AmplifyAppId": "d32s9s952rx1gx"
     }
   }
 }

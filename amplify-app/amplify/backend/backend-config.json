@@ -8,7 +8,7 @@
     }
   },
   "api": {
-    "cryptoAPI": {
+    "cryptoapi": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [

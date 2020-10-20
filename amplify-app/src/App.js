@@ -6,6 +6,10 @@ import { API } from 'aws-amplify';
 
 import './App.css';
 
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
+
 
 
 function App() {
@@ -17,7 +21,7 @@ function App() {
     try { 
 
       console.log('Adding API connection');
-      const data = await API.get('cryptoAPI', '/coins')
+      const data = await API.get('cryptoapi', '/coins')
       updateCoins(data.coins)
 
     } catch (error) {

@@ -45,16 +45,16 @@
         
         
         
-      "cryptoAPI": {
+      "cryptoapi": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "cryptoAPI",
+          "Name": "cryptoapi",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "cryptoAPI"
+              "title": "cryptoapi"
             },
             "host": {
                 "Fn::Join": [
@@ -332,7 +332,7 @@
                   
         
         
-        "functioncryptofunctionPermissioncryptoAPI": {
+        "functioncryptofunctionPermissioncryptoapi": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
@@ -356,7 +356,7 @@
                             },
                             ":",
                             {
-                                "Ref": "cryptoAPI"
+                                "Ref": "cryptoapi"
                             },
                             "/*/*/*"
                         ]
@@ -367,7 +367,7 @@
         
         
         
-      "DeploymentAPIGWcryptoAPI": {
+      "DeploymentAPIGWcryptoapi": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
@@ -381,7 +381,7 @@
             ]
           },
           "RestApiId": {
-            "Ref": "cryptoAPI"
+            "Ref": "cryptoapi"
           }
         }
       }
@@ -389,15 +389,15 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "cryptoAPI"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "cryptoapi"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
-          "Value": "cryptoAPI"
+          "Value": "cryptoapi"
         },
         "ApiId": {
           "Description": "API ID (prefix of API URL)",
-          "Value": {"Ref": "cryptoAPI"}
+          "Value": {"Ref": "cryptoapi"}
         }
     }
   }
